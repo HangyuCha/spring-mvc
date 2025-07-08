@@ -35,10 +35,10 @@ public class DataRequestController {
 
     }
 
-    @PostMapping("/form/model")
+    @GetMapping("/form/param/model")
     @ResponseBody
     public String helloRequestModel(@ModelAttribute Star star) {
-        return String.format("Hello @ModelAttribute으로 받은 객체 Post요청, <br> name = %s age = %d", star.getName(), star.getAge());
+        return String.format("Hello @ModelAttribute으로 받은 객체 Get요청, <br> name = %s age = %d", star.getName(), star.getAge());
 
     }
 }
