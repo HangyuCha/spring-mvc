@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hangyu's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+        .container {
+            padding: 80px 120px;
+        }
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+        footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+        }
+        footer a {
+            color: #f5f5f5;
+        }
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">차한규</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#myPage">HOME</a></li>
+                <li><a href="#career">CAREER</a></li>
+                <li><a href="#travel">TRAVEL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<div id="myPage" class="container text-center">
+    <h3>Hello I'm Hangyu Cha</h3>
+    <p>Hello, my name is Hangyu Cha, and I am passionate about creating meaningful connections between technology and people. With a curious mind and a relentless drive to learn, I constantly explore new ideas, technologies, and cultures. My academic background combines software engineering and business administration, which allows me to approach challenges from both technical and strategic perspectives.
+        I believe that technology should not only solve problems but also inspire and empower those who use it. Whether I am developing innovative solutions, collaborating with others, or embarking on new journeys, I strive to leave a positive impact through everything I do. I am always eager to embrace new experiences, broaden my horizons, and contribute to projects that make a difference. This website is a reflection of my journey — one filled with growth, creativity, and a deep commitment to excellence.</p>
+</div>
+
+<!-- Career Section -->
+<div id="career" class="container text-center">
+    <h3>CAREER</h3>
+    <p>Software Engineering at Hongik University.</p>
+    <p>Double major in Business Administration at Hongik University</p>
+    <p>231st Artillery Battalion of the 8th Mobile Division</p>
+    <p>Bayswater Academy in Canada Toronto</p>
+    <p>League of Legend Emerald</p>
+</div>
+
+<!-- Travel Section -->
+<div id="travel" class="container text-center">
+    <h3>TRAVEL</h3>
+    <p>Traveling has always been one of the most meaningful ways for me to explore the world, experience new cultures, and grow as a person. I’ve been fortunate enough to visit a variety of incredible destinations across Asia, North America, and Europe, each leaving a unique impression on me.
+        In Asia, I’ve wandered the vibrant streets of Hong Kong, felt the dynamic energy of Bangkok in Thailand, and experienced both the modern and traditional sides of Tokyo, Osaka, and the beautiful Okinawa in Japan. I’ve explored the lively night markets and warm hospitality of Taipei in Taiwan, and discovered the impressive blend of history and innovation in Shanghai, China.
+        My journeys have also taken me to Toronto, Canada, where I admired the city's multicultural spirit, and to the iconic New York City, where I was inspired by its endless possibilities and unforgettable skyline.
+        In Europe, I’ve walked through the romantic streets of Paris, stood in awe of the timeless beauty of Rome, and experienced the vibrant culture and history of London.
+        Each city taught me something new — about people, about the world, and about myself. These adventures continue to shape who I am today, fueling my curiosity and inspiring me to keep exploring. Every destination has a story, and I look forward to writing many more.</p>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="container text-center">
+    <h3>CONTACT</h3>
+    <p>If you want to contact me, then look at the bottom side of this page.</p>
+    <p><span class="glyphicon glyphicon-envelope"></span> hangyucha@naver.com</p>
+</div>
+
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>© 2025 N.O.D.E. COMPANY</p>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    })
+</script>
+
+</body>
+</html>
